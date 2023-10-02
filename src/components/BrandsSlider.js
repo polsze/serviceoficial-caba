@@ -11,67 +11,21 @@ import Logos6 from '../images/logos6.webp'
 
 
 function BrandsSlider() {
+
+  const Imagenes = [Logos, Logos1, Logos2, Logos3, Logos4, Logos5, Logos6];
+
   return (
-
     <Carousel prevIcon={null} nextIcon={null} indicators={false}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos1}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos2}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos3}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos4}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos5}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Logos6}
-          alt="Marcas de heladeras"
-        />
-
-      </Carousel.Item>
+      {Imagenes.map((imagen, index) => (
+        <Carousel.Item key={index}>
+          <img
+            className="d-block w-100"
+            src={imagen}
+            alt={`Marca ${index + 1}`}
+          />
+        </Carousel.Item>
+      ))}
     </Carousel>
-
   );
 }
 

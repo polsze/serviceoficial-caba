@@ -1,12 +1,7 @@
 "use client"
 import React from 'react'
-import  { AnimatedTextNew } from './AnimatedText'
-import { motion } from 'framer-motion'
 import BrandsSlider from './BrandsSlider'
 import { AnimatedTextTitle } from './AnimatedTextTitle'
-
-
-
 
 const BannerSmall = () => {
   return (
@@ -28,12 +23,8 @@ const BannerSmall = () => {
 export const BannerTwo = () => {
   return (
     <>
-      <div className='h-16 pt-2 flex flex-row items-center shadow-xl sm:h-20 bg-gradient-to-t from-blue-700 to-black'>
-        <motion.div className='' initial={{ opacity: 0 }} transition={{ ease: "easeOut", duration: 2 }} animate={{ opacity: 1 }}>
-        </motion.div>
-        <AnimatedTextNew text='NOS ESFORZAMOS PARA BRINDARTE EL MEJOR SERVICIO, ¡CONTACTANOS!'
-          className=' text-white !text-3xl text-center xl:!text-3xl 
-                      lg:!text-center lg:!text-2xl md:!text-5xl sm:!text-xl sm:px-2 xs:!text-lg' />
+      <div className='h-16 pt-2 flex flex-row items-center justify-center shadow-xl  bg-gradient-to-t from-blue-700 to-black text-white text-center sm:h-20 '>
+        <h3>NOS ESFORZAMOS PARA BRINDARTE EL MEJOR SERVICIO, ¡CONTACTANOS!</h3>
       </div>
     </>
   )
@@ -42,11 +33,8 @@ export const BannerTwo = () => {
 export const BannerThree = () => {
   return (
     <>
-      <div className='h-16 flex flex-row items-center shadow-xl bg-gradient-to-t from-blue-700 to-black'>
-        <motion.div className='' initial={{ opacity: 0 }} transition={{ ease: "easeOut", duration: 2 }} animate={{ opacity: 1 }}>
-        </motion.div>
-        <AnimatedTextNew text='OFRECEMOS UN SERVICIO RÁPIDO Y CONFIABLE' className='pt-0 text-white !text-3xl text-center xl:!text-3xl 
-        lg:!text-center lg:!text-2xl md:!text-5xl sm:!text-xl xs:!text-lg' />
+      <div className='h-16 pt-2 flex flex-row items-center justify-center shadow-xl  bg-gradient-to-t from-blue-700 to-black text-white text-center sm:h-20 '>
+        <h3>OFRECEMOS UN SERVICIO RÁPIDO Y CONFIABLE</h3>
       </div>
     </>
   )

@@ -6,14 +6,13 @@ import Call from '../images/icono-llamada.webp'
 import { motion } from 'framer-motion'
 import { BannerTwo } from "./BannerSm";
 
-
 const ContactSection = () => {
   const initialData = {
     nombre: "",
     correo: "",
     asunto: "",
-    telefono: "",
     mensaje: "",
+    telefono: "",
   };
 
   const onValidate = (form) => {
@@ -21,6 +20,7 @@ const ContactSection = () => {
     let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
     let regexComments = /^.{1,255}$/;
+    let regexPhoneNumber = /^[\d-]+$/;
 
     if (!form.nombre.trim()) {
       errors.nombre = 'El campo "Nombre" no debe estar vacío.';
@@ -41,9 +41,9 @@ const ContactSection = () => {
     }
 
     if (!form.telefono.trim()) {
-      errors.telefono = 'El campo "Teléfono" no debe estar vacío.';
-    } else if (!regexName.test(form.telefono)) {
-      errors.telefono = 'El campo "Telefono" es obligatorio';
+      errors.telefono = 'El campo "Teléfono" es obligatorio.';
+    } else if (!regexPhoneNumber.test(form.telefono)) {
+      errors.telefono = 'El campo "Teléfono" solo debe contener números y guiones.';
     }
 
     if (!form.mensaje.trim()) {
@@ -85,7 +85,7 @@ const ContactSection = () => {
           <div className="flex flex-row items-center pb-4">
             <img src={Call} alt="Ícono telefónico" className="mr-4" />
             <motion.button className="text-white bg-gradient-to-b from-emerald-400 to-emerald-800  font-bold text-2xl px-3 py-2 rounded-xl sm:text-2xl sm:flex sm:justify-end"
-              whileTap={{ scale: 0.9 }} onClick={handlePhoneClick}>
+              onClick={handlePhoneClick}>
               1156367024
             </motion.button>
           </div>
@@ -132,15 +132,15 @@ const ContactSection = () => {
 
             <label className="form-label pt-2 font-bold text-xl sm:pl-2">Teléfono</label>
             <input
-              type="number"
+              type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
               name="telefono"
               value={form.telefono}
               onChange={handleChange}
-              placeholder="Número de celular"
+              placeholder="Ingrese su número de teléfono aquí"
             />
             {errors.telefono && (
-              <div className="alert alert-danger rounded-xl mt-1 p-2 sm:w-[95%] sm:mx-auto">{errors.telefono}</div>
+              <div className="alert alert-danger p-2 mt-1 rounded-xl sm:w-[95%] sm:mx-auto">{errors.telefono}</div>
             )}
 
             <label className="form-label pt-2 font-bold text-xl sm:pl-2">Mensaje</label>
@@ -163,13 +163,11 @@ const ContactSection = () => {
               w-[100%] sm:w-[95%]"
                 type="submit"
                 disabled={loading}
-                whileTap={{ scale: 0.9 }}
               >
                 {loading ? "Enviando..." : "Enviar"}
               </motion.button>
             </div>
           </form>
-
         </div>
       </div>
     </>

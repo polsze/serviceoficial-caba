@@ -31,7 +31,7 @@ const ServicesSection = () => {
             <img className="" src={Casa} alt="Servicio a domicilio en Capital Federal" />
             <h2 className="font-bold text-xl mb-2 text-center">Servicio Residencial y Comercial</h2>
             <p className="text-gray-700 text-lg sm:w-[80%]">
-            Cobertura inmediata, solicite nuestros servicios, zona de cobertura Capital Federal.
+              Cobertura inmediata, solicite nuestros servicios, zona de cobertura Capital Federal.
             </p>
           </div>
           <div className='h-96 border border-r-2 border-solid 2xl:hidden lg:hidden md:hidden sm:hidden'></div>

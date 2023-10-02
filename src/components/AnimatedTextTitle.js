@@ -32,27 +32,25 @@ export const AnimatedTextTitle = () => {
 
   return (
     <>
-    
-        <div className='w-full mx-auto py-2 flex items-center flex-- justify-center text-center overflow-hidden sm:py-0'>
-          <div >
-            <motion.h1
-              variants={sentence}
-              initial="hidden"
-              animate="visible"
-              className='text-center text-white sm:text-sm xl:text-2xl 2xl:text-3xl'
-            >
-              {titulo.split("").map((char, index) => {
-                return (
-                  <motion.span key={char + "-" + index} variants={letter}>
-                    {char}
-                  </motion.span>
-                )
-              })
-              }
-            </motion.h1>
-          </div>
+      <div className='w-full mx-auto py-2 flex items-center  justify-center text-center overflow-hidden sm:py-0'>
+        <div >
+          <motion.h2
+            variants={sentence}
+            initial="hidden"
+            animate="visible"
+            className='text-center text-white sm:text-lg xl:text-2xl 2xl:text-3xl'
+          >
+            {titulo.split("").map((char, index) => {
+              return (
+                <motion.span key={char + "-" + index} variants={letter}>
+                  {char}
+                </motion.span>
+              )
+            })
+            }
+          </motion.h2>
         </div>
-     
+      </div>
     </>
   )
 }

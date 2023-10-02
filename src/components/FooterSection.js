@@ -2,9 +2,6 @@ import React from 'react'
 import Ref from '../images/serviceoficial-caba-logo.webp'
 import { motion } from 'framer-motion'
 
-
-
-
 const FooterSection = () => {
   const phoneNumber = "1156367024"; // Número de teléfono para realizar la llamada
 
@@ -14,7 +11,7 @@ const FooterSection = () => {
   return (
     <>
       <footer className=' bg-gray-200 h-auto flex flex-row justify-around items-center lg:flex-wrap sm:flex-wrap xs:justify-center' >
-      <div className='relative right-4 2xl:right-0 xs:right-4 xs:hidden'>
+        <div className='relative right-4 2xl:right-0 xs:right-4 xs:hidden'>
           <img src={Ref} alt="Service Oficial Caba Logo" className=' 2xl:w-44 2xl:h-44 sm:w-24 sm:h-24' />
         </div>
         <div className=''>
@@ -25,17 +22,17 @@ const FooterSection = () => {
             <li className='list-disc sm:text-lg sm:pb-4'>Domingos y Feriados: Cerrado</li>
           </ul>
         </div>
-        
+
         <div className='text-gray-300'>
-          
+
           <div className='2xl:pl-4 xs:pl-0 xs:flex xs:items-center xs:flex-col'>
-            
-          <span className='text-black text-2xl'>CONTACTO: </span>
+
+            <span className='text-black text-2xl'>CONTACTO: </span>
             <motion.button className="text-white bg-gradient-to-b from-emerald-400 to-emerald-800  font-bold text-2xl px-3 py-2 rounded-xl sm:text-2xl sm:flex sm:justify-end"
-              whileTap={{ scale: 0.9 }} onClick={handlePhoneClick}>
+              onClick={handlePhoneClick}>
               1156367024
             </motion.button>
-            
+
             <h6 className='font-bold text-xl text-center text-green-500 2xl:pl-2 sm:text-lg xs:pl-0 xs:text-sm xs:mb-2'>¡GRACIAS POR CONFIAR EN NOSOTROS!</h6>
           </div>
         </div>
@@ -46,7 +43,7 @@ const FooterSection = () => {
       <div className='h-12 bg-gray-900 text-white decoration-none flex items-center justify-center sm:px-2 sm:text-xs sm:text-center'>
         <a href="https://pablobarriosportfolio-blond.vercel.app/" target="_blank" className='font-bold decoration-transparent' rel="noreferrer">PBX Web Design</a>
       </div>
-      
+
     </>
   )
 }
