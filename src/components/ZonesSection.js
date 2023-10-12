@@ -17,7 +17,7 @@ const ZonesSection = () => {
               <Icon icon="mingcute:car-fill" width="56" height="56" />
             </div>
           </div>
-          <p className='text-2xl sm:text-lg sm:px-2'>Agronomía - Almagro - Balvanera - Barrio Norte - Belgrano -
+          <p className='text-2xl sm:text-lg sm:px-2 2xl:text-3xl'>Agronomía - Almagro - Balvanera - Barrio Norte - Belgrano -
             Caballito - Centro - Coghlan - Colegiales - Congreso - Constitución - Flores - Floresta - Liniers -
             Mataderos - Nuñez - Palermo - Parque Centenario - Parque Chacabuco - Paternal -  Puerto Madero -
             Recoleta - Saavedra - San Telmo - Tribunales - Versailles - Villa Crespo - Villa Devoto - Villa Luro - Villa Pueyrredón - Villa Urquiza - Villa Del Parque.</p>

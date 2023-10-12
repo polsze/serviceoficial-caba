@@ -79,19 +79,19 @@ const ContactSection = () => {
         <div className="rounded bg-gradient-to-l from-slate-500 via-slate-400 to-slate-300 flex items-center justify-center flex-col shadow-lg w-[30%] 
           xl:w-[90%] 2xl:w-[100%] lg:w-[100%] sm:w-[100%]">
           <h4 className="pt-4 text-4xl font-bold text-center text-white sm:text-3xl sm:pb-4">ENVÍANOS TU CONSULTA</h4>
-          <p className="pt-4 px-24 w-[70%] text-white font-bold flex flex-col items-center sm:w-full sm:px-4 sm:pb-4 sm:py-0">
+          <p className="pt-4 px-24 w-[70%] text-white font-bold flex flex-col items-center 2xl:text-2xl  sm:w-full sm:px-4 sm:pb-4 sm:py-0 sm:text-xl">
             CONTACTANOS POR CORREO ELECTRÓNICO O LLAMANDO AL:
           </p>
           <div className="flex flex-row items-center pb-4">
             <img src={Call} alt="Ícono telefónico" className="mr-4" />
-            <motion.button className="text-white bg-gradient-to-b from-emerald-400 to-emerald-800  font-bold text-2xl px-3 py-2 rounded-xl sm:text-2xl sm:flex sm:justify-end"
+            <motion.button className="text-white bg-gradient-to-b from-emerald-400 to-emerald-800  font-bold text-2xl px-3 py-2 rounded-xl sm:text-2xl sm:flex sm:justify-end 2xl:text-3xl"
               onClick={handlePhoneClick}>
               1156367024
             </motion.button>
           </div>
 
           <form className="" onSubmit={handleSubmit}>
-            <label className="form-label font-bold text-xl sm:pl-2">Nombre</label>
+            <label className="form-label font-bold text-xl sm:pl-2 2xl:text-2xl">Nombre</label>
             <input
               type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
@@ -104,7 +104,7 @@ const ContactSection = () => {
               <div className="alert alert-danger p-2 rounded-xl mt-1 sm:w-[95%] sm:mx-auto">{errors.nombre}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2">Correo electrónico</label>
+            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Correo electrónico</label>
             <input
               type="email"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200 "
@@ -117,7 +117,7 @@ const ContactSection = () => {
               <div className="alert alert-danger rounded-xl mt-1 p-2 sm:w-[95%] sm:mx-auto">{errors.correo}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2">Asunto</label>
+            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Asunto</label>
             <input
               type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
@@ -130,7 +130,7 @@ const ContactSection = () => {
               <div className="alert alert-danger rounded-xl mt-1 p-2 sm:w-[95%] sm:mx-auto">{errors.asunto}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2">Teléfono</label>
+            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Teléfono</label>
             <input
               type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
@@ -143,7 +143,7 @@ const ContactSection = () => {
               <div className="alert alert-danger p-2 mt-1 rounded-xl sm:w-[95%] sm:mx-auto">{errors.telefono}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2">Mensaje</label>
+            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Mensaje</label>
             <textarea
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
               name="mensaje"
