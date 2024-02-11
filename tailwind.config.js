@@ -11,7 +11,7 @@ module.exports = {
         '3/4': '75%'
       },
       backgroundImage: {
-        'main-banner': "url('images/reparacion-heladeras.png')",
+        'main-banner': "url('images/hero-img.webp')",
         'footer-image': "url('images/black-blackground.webp')",
         'fnd-image': "url('images/background.webp')",
       },
@@ -33,7 +33,7 @@ module.exports = {
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
 
-      xs: { max: "479px" },
+      xs: { max: "361px" },
       // => @media (max-width: 479px) { ... }
     }
   },

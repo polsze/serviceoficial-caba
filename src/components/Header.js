@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion"
-import Logo from '../images/serviceoficial-caba-logo.webp'
+import Logo from '../images/mecanico.png'
 import Call from '../images/icono-llamada.webp'
 import Wsp from '../images/whatsapp-logo.webp'
 import Phone from '../images/llamada-logo.webp'
@@ -17,15 +17,14 @@ const Header = () => {
   return (
     <>
       <header className='flex flex-row overflow-hidden w-full'>
-
-        <div className="w-full h-32 bg-white flex items-center xs:h-16" >
+        <div className="w-full h-20 bg-white absolute flex items-center xs:h-16" >
           <motion.div className="lg:absolute lg:pt-4 lg:-left-20 xs:-left-24 xs:ml-4 xs:pt-8 " initial={{ opacity: 0, x: -250 }} animate={{ opacity: 1, x: 100 }}
             transition={{ ease: "easeOut", duration: 1 }}>
-            <img src={Logo} alt="Service Oficial Caba Logo" className='xs:w-28 xs:h-28 ' />
+            <img src={Logo} alt="Service Oficial-CABA reparacion de heladeras en Capital Federal" className='sm:relative sm:bottom-2 xs:bottom-4' />
           </motion.div>
           <div className='mx-auto xl:w-1/2 xl:pr-0 lg:w-1/2 lg:absolute lg:right-2 lg:pr-0 xs:pt-3'>
-            <motion.p className='text-black font-bold text-xl 2xl:text-3xl sm:text-sm' initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }} transition={{ ease: "easeOut", duration: 2 }}><b className='text-orange-600'>
+            <motion.p className='my-auto text-black font-bold text-xl 2xl:text-2xl  xl:text-xl sm:text-sm xs:text-xs xs:pl-3' initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} transition={{ ease: "easeOut", duration: 2 }}><b className='text-black'>
                 Horarios de Atención:</b> Lunes a Sábados de 9:00 a 20:00hs
             </motion.p>
           </div>

@@ -38,7 +38,7 @@ export const AnimatedTextTitle = () => {
             variants={sentence}
             initial="hidden"
             animate="visible"
-            className='text-center text-white sm:text-lg xl:text-2xl 2xl:text-3xl'
+            className='text-center text-white text-2xl  2xl:text-3xl xl:text-2xl sm:text-lg'
           >
             {titulo.split("").map((char, index) => {
               return (

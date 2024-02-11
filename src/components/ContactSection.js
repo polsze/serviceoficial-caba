@@ -72,13 +72,13 @@ const ContactSection = () => {
       <div className="flex flex-row items-center justify-center flex-wrap py-24 sm:py-2">
         <div className="pr-12 sm:pr-0 lg:pr-0 xl:pr-0 xl:pb-2 2xl:pr-0">
           <div>
-            <img src={Repair} alt="Reparación de heladeras" className="shadow brightness-50 rounded" />
+            <img src={Repair} alt="Reparación de heladeras a domicilio en Capital Federal" className="shadow brightness-50 rounded" />
           </div>
         </div>
 
-        <div className="rounded bg-gradient-to-l from-slate-500 via-slate-400 to-slate-300 flex items-center justify-center flex-col shadow-lg w-[30%] 
+        <div className="rounded bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center flex-col shadow-lg w-[30%] 
           xl:w-[90%] 2xl:w-[100%] lg:w-[100%] sm:w-[100%]">
-          <h4 className="pt-4 text-4xl font-bold text-center text-white sm:text-3xl sm:pb-4">ENVÍANOS TU CONSULTA</h4>
+          <h4 className="pt-4 text-4xl font-bold text-center text-white sm:text-xl sm:pb-4">ENVÍANOS TU CONSULTA</h4>
           <p className="pt-4 px-24 w-[70%] text-white font-bold flex flex-col items-center 2xl:text-2xl  sm:w-full sm:px-4 sm:pb-4 sm:py-0 sm:text-xl">
             CONTACTANOS POR CORREO ELECTRÓNICO O LLAMANDO AL:
           </p>
@@ -91,7 +91,7 @@ const ContactSection = () => {
           </div>
 
           <form className="" onSubmit={handleSubmit}>
-            <label className="form-label font-bold text-xl sm:pl-2 2xl:text-2xl">Nombre</label>
+            <label className="text-white form-label font-bold text-xl  2xl:text-2xl sm:pl-2 sm:text-lg">Nombre</label>
             <input
               type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
@@ -104,7 +104,7 @@ const ContactSection = () => {
               <div className="alert alert-danger p-2 rounded-xl mt-1 sm:w-[95%] sm:mx-auto">{errors.nombre}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Correo electrónico</label>
+            <label className="text-white form-label pt-2 font-bold text-xl 2xl:text-2xl sm:pl-2 sm:text-lg">Correo electrónico</label>
             <input
               type="email"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200 "
@@ -117,10 +117,10 @@ const ContactSection = () => {
               <div className="alert alert-danger rounded-xl mt-1 p-2 sm:w-[95%] sm:mx-auto">{errors.correo}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Asunto</label>
+            <label className=" text-white form-label pt-2 font-bold text-xl  2xl:text-2xl sm:pl-2 sm:text-lg">Asunto</label>
             <input
               type="text"
-              className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
+              className="form-control rounded-xl sm:w-[95%]  sm:mx-auto hover:bg-sky-200"
               name="asunto"
               value={form.asunto}
               onChange={handleChange}
@@ -130,7 +130,7 @@ const ContactSection = () => {
               <div className="alert alert-danger rounded-xl mt-1 p-2 sm:w-[95%] sm:mx-auto">{errors.asunto}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Teléfono</label>
+            <label className="text-white form-label pt-2 font-bold text-xl  2xl:text-2xl sm:pl-2 sm:text-lg">Teléfono</label>
             <input
               type="text"
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
@@ -143,7 +143,7 @@ const ContactSection = () => {
               <div className="alert alert-danger p-2 mt-1 rounded-xl sm:w-[95%] sm:mx-auto">{errors.telefono}</div>
             )}
 
-            <label className="form-label pt-2 font-bold text-xl sm:pl-2 2xl:text-2xl">Mensaje</label>
+            <label className="text-white form-label pt-2 font-bold text-xl  2xl:text-2xl sm:pl-2 sm:text-lg">Mensaje</label>
             <textarea
               className="form-control rounded-xl sm:w-[95%] sm:mx-auto hover:bg-sky-200"
               name="mensaje"
