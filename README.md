@@ -1,5 +1,6 @@
 # Landing page para Service Oficial CABA 
-![]([https://github.com/polsze/serviceoficial-caba/blob/main/service-bg.png](https://github.com/polsze/serviceoficial-caba/blob/main/service.bg.png])
+![](https://github.com/polsze/serviceoficial-caba/blob/main/service-bg.png)
+
 
 Tecnologías usadas: React, JavaScript, TailwindCSS.
 
